@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  cursor: default;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #efefef;
+  font: 100%/1.6em Arial;
+  color: #777;
+  padding: 20px;
+}
+
+/* Reservation Card Block */
+.reservationCard {
+  width: 400px;
+  max-width: 100%;
+  height: 600px;
+  max-height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  padding: 35px;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 15px -1px #777;
+}
+
+.reservationCard__back {
+  background: url('img/icons/reservationCard__back.png') left center no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  float: left;
+}
+.reservationCard__search {
+  background: url('img/icons/reservationCard__search.png') right center no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  float: right;
+}
+
+.reservationCard__placePicture {
+  background: url('img/places/reservationCard__placePicture.jpg') center no-repeat;
+  background-size: cover;
+  width: 130px;
+  height: 130px;
+  margin: 25px auto;
+  border: 6px solid #474850;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px -2px #777;
+}
+
+.reservationCard__placeName {
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.count, .visitDate {
+  margin: 25px 0;
+  font-size: 20px;
+  text-align: center;
+}
+.count__counter {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: space-between;
+  align-items: space-between;
+  margin-top: 10px;
+  height: 70px;
+  line-height: 70px;
+  color: #474850;
+}
+.count__number {
+  font-size: 70px;
+  font-weight: bold;
+  flex: 1;
+}
+.count__less, .count__more {
+  font-size: 40px;
+  flex: 1;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+.visitDate__date {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.reservationCard__confirmation {
+  display: block;
+  width: 300px;
+  max-width: 100%;
+  height: 80px;
+  background-color: #474850;
+  margin: 0 auto;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 10px 25px -3px #777;
+  transition: all .3s ease;
+}
+.reservationCard__confirmation:hover {
+  background-color: #404040;
+  box-shadow: 0 5px 25px -3px #777;
+}
